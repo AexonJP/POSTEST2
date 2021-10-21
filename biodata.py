@@ -4,7 +4,7 @@ asd["nim"] = input("MASUKKAN NIM ANDA: ")
 asd["umur"] = input("BERAPA UMUR ANDA?: ")
 asd["hobi"] = input("SEPERTI APA HOBI ANDA?: ")
 asd["agama"] = input("APA AGAMA ANDA?: ")
-asd["jomblo"] = input("ANDA JOMBLO?(ya/tidak): ")
+asd["jomblo"] = input("STATUS ANDA JOMBLO?(ya/tidak): ")
 umur1 = int(asd["umur"])
 nim1 = int(asd["nim"])
 
@@ -15,6 +15,7 @@ print (f"NIM ANDA: {nim1}")
 print (f"UMUR ANDA: {umur1}")
 print ("HOBI ANDA: "+asd["hobi"])
 print ("AGAMA ANDA: "+asd["agama"])
+print ("STATUS ANDA JOMBLO?: "+asd["jomblo"])
 
 if asd["jomblo"] == "ya":
     print ("MASIH JOMBLO BRO? TURUT BERDUKA AKU BRO, MOGA JOMBLONYA GA TAMBAH LAMA")
