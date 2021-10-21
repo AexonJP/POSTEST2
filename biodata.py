@@ -8,7 +8,6 @@ asd["jomblo"] = input("STATUS ANDA JOMBLO?(ya/tidak): ")
 umur1 = int(asd["umur"])
 nim1 = int(asd["nim"])
 
-print ("\n" * 100)
 print ("\n===================\nBIODATA ANDA SAAT INI\n===================\n")
 print ("NAMA ANDA: "+ asd["nama"])
 print (f"NIM ANDA: {nim1}")
