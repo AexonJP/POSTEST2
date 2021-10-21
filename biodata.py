@@ -1,6 +1,3 @@
-from typing import cast
-
-
 asd = {"nama": "0","umur":"0","hobi":"0","agama":"0","jomblo":"0"}
 asd["nama"] = input("MASUKKAN NAMA ANDA: ")
 asd["nim"] = input("MASUKKAN NIM ANDA: ")
