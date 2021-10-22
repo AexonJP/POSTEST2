@@ -18,36 +18,21 @@ while (True):
 
     if awal == "1":
         frt = input (f"{hi}\b{nama[0]}{ke}")
-        if frt < "a" :
-            print ()
-        else :
-            akhir = 0
     elif awal == "2":
         kop = input (f"{hi}\b{nama[1]}{ke}")
-        if kop < "a" :
-            frt = float(kop)*usd
-        else :
-            akhir = 0
     elif awal == "3":
         kop = input (f"{hi}\b{nama[2]}{ke}")
-        if kop <"a" :
-            frt = float(kop)*sgd
-        else :
-            akhir = 0
     elif awal == "4":
         kop = input (f"{hi}\b{nama[3]}{ke}")
-        if kop <"a" :
-             frt = float(kop)*eur
-        else :
-            akhir = 0
     elif awal == "5":
         kop = input (f"{hi}\b{nama[4]}{ke}")
-        if kop <"a" :
-            frt = float(kop)*jpy
-        else :
-            akhir = 0
     else :
         akhir = 0
+
+    if frt < "a" :
+            asds = 10
+    else :
+            akhir = 0
 
     if akhir == "1":
         nilai = float(frt) / 1
