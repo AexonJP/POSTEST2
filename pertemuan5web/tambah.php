@@ -6,8 +6,18 @@ if (isset($_POST['tambah'])) {
     $nim = htmlspecialchars($_POST["nim"]);
     $kelas = htmlspecialchars($_POST["kelas"]);
     $prodi = htmlspecialchars($_POST["prodi"]);
+    
+    $result = mysqli_query($conn, "SELECT * FROM mahasiswa");
 
-    $sql = "INSERT INTO mahasiswa values('', '$nim', '$nama','$prodi' , '$kelas')";
+    $mahasiswa = [];
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $mahasiswa[] = $row;
+    }
+    $i = 0; foreach ($mahasiswa as $mhs): $i++;endforeach;
+    // $sql = "INSERT INTO mahasiswa values('$i', '$nim', '$nama','$prodi' , '$kelas')";
+    $sql = "INSERT INTO mahasiswa (id, nim, nama, kelas, prodi)  
+                            VALUES('$i','$nim', '$nama', '$kelas', '$prodi')";
 
     $result = mysqli_query($conn, $sql);
 
